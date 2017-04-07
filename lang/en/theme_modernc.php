@@ -23,3 +23,7 @@ $string['choosereadme'] = 'Theme ModernC is designed for modern educational inst
 $string['pluginname'] = 'ModernC';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Right';
+
+//jazykové reťazce pre administráciu našej témy
+$string['settingstitle'] = 'ModernC settings';
+$string['generaltitle']  = 'General settings';

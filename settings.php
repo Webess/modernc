@@ -17,9 +17,18 @@
 // This line protects the file from being accessed by a URL directly.
 defined('MOODLE_INTERNAL') || die();
 
-// A description shown in the admin theme selector.
-$string['choosereadme'] = 'Téma ModernC je určená pre moderné vzdelávacie inštitúcie.';
-// The name of our plugin.
-$string['pluginname'] = 'ModernC';
-// We need to include a lang string for each block region.
-$string['region-side-pre'] = 'Right';
+//nastavenie témy sa zobrazí iba v administrácií
+if ($ADMIN->fulltree) {
+
+    //do administrácie pridáme stránku nastavenia témy
+    $settings = new theme_boost_admin_settingspage_tabs('themesettingmodernc', get_string('settingstitle', 'theme_modernc'));
+
+    //vytvoríme kartu
+    $page = new admin_settingpage('theme_modernc_general', get_string('generaltitle', 'theme_modernc'));
+
+    //pridanie nastavenia do karty
+    //$page->add($setting);
+
+    //kartu pridáme do nastavení
+    $settings->add($page);
+}
