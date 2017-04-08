@@ -1,1 +1,153 @@
 //css pravidla
+
+body{
+    height: auto;
+    font-family: $font-family-text, sans-serif;
+    background-color: $backgroundcolor;
+    background-image: url([[pix:theme_modernc|backgroundimage]]);
+}
+
+a{
+    text-decoration: none;
+    transition: all $anchor-hover-animation;
+}
+
+//titles
+.page-context-header .page-header-headings,
+.page-context-header .header-button-group,
+#adminsettings h2,
+.sectionname,
+.card-title,
+.card h2,
+.card h3,
+.fheader{
+    font-family: $font-family-title, sans-serif;
+}
+
+.card-title{
+    text-align: center;
+}
+
+//left sidebar
+[data-region="drawer"]{
+    background-color: $sidebar-bg-color;
+    top: 55px;
+}
+
+#page{
+    margin-top: 55px;
+}
+
+#page-header{
+	padding-top: 7px;
+}
+
+//navbar
+.navbar-light{
+    background-color: $navbar-background;
+    color: $gray-lightest;
+    border-bottom: $navbar-border-width solid $navbar-border-color;
+    line-height: $navbar-height/2;
+    a,
+    .nav-link{
+        color: $gray-lightest !important;
+    }
+}
+
+.btn-secondary[data-action='toggle-drawer']{
+    margin-top: .3rem;
+}
+
+.usermenu{
+    line-height: $navbar-height/1.5;
+}
+
+.dropdown-menu{
+    background-color: $navbar-background;
+    color: $gray-lightest;
+    border: 0;
+    .dropdown-item{
+        border-color: $gray-dark;
+        &:hover{
+            background-color: $gray-dark;
+        }
+    }
+}
+
+//button
+.btn-primary,
+.btn-secondary{
+	color: $gray-lightest;
+	background-color: $brand-primary;
+	border-color: darken($brand-primary, 5%);
+    transition: all $anchor-hover-animation;
+    &:hover{
+        color: $gray-lightest;
+        background-color: darken($brand-primary, 5%);
+        border-color: darken($brand-primary, 10%);
+    }
+}
+
+.filemanager-toolbar,
+.fp-repo-items,
+.fp-viewbar{
+    .btn-primary,
+    .btn-secondary{
+    	color: #373a3c;
+    	background-color: #e6e6e6;
+    	border-color: #adadad;
+        transition: all $anchor-hover-animation;
+        &:hover{
+            background-color: #d4d4d4;
+            border-color: #8c8c8c;
+        }
+    }
+}
+
+//alerts
+.alert{
+    color: $gray-lightest;
+    font-weight: bold;
+}
+
+.alert-info{
+    background-color: $brand-primary;
+    border-color: darken($brand-primary, 5%);
+}
+
+.alert-success{
+    background-color: $brand-success;
+    border-color: darken($brand-success, 5%);
+}
+
+.alert-warning{
+    background-color: $brand-warning;
+    border-color: darken($brand-warning, 5%);
+}
+
+.alert-danger{
+    background-color: $brand-danger;
+    border-color: darken($brand-danger, 5%);
+}
+
+//breadcrumb
+.breadcrumb{
+    color: #818a91;
+    a{
+        text-decoration: none;
+    }
+}
+
+//oprava farby borderu pri tabuľkách
+.table th,
+table.collection th,
+table.flexible th,
+.generaltable th,
+.table td,
+table.collection td,
+table.flexible td,
+.generaltable td,
+table.forumheaderlist th,
+table.forumheaderlist td{
+    border: 1px solid #f4f4f4;
+}

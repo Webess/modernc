@@ -18,12 +18,39 @@
 defined('MOODLE_INTERNAL') || die();
 
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme ModernC is designed for modern educational instutions.';
+$string['choosereadme']    = 'Theme ModernC is designed for modern educational instutions.';
 // The name of our plugin.
-$string['pluginname'] = 'ModernC';
+$string['pluginname']      = 'ModernC';
 // We need to include a lang string for each block region.
 $string['region-side-pre'] = 'Right';
 
 //jazykové reťazce pre administráciu našej témy
 $string['settingstitle'] = 'ModernC settings';
-$string['generaltitle']  = 'General settings';
+//general settings
+$string['generaltitle']         = 'General settings';
+$string['backgroundimage']      = 'Background image';
+$string['backgroundimage_desc'] = 'Image on the page background.';
+$string['backgroundcolor']      = 'Background color';
+$string['backgroundcolor_desc'] = 'Background color, if not set the background image.';
+$string['customcss']              = 'CSS rules';
+$string['customcss_desc']         = 'You can insert here your own CSS rules.';
+
+//color and font settings
+$string['colorfonttitle']         = 'Color & font settings';
+$string['brandprimary']           = 'Primary color';
+$string['brandprimary_desc']      = 'The accent color.';
+$string['brandsuccess']           = 'Success color';
+$string['brandsuccess_desc']      = 'The success alert color.';
+$string['brandwarning']           = 'Warning color';
+$string['brandwarning_desc']      = 'The warning alert color.';
+$string['branddanger']            = 'Danger color';
+$string['branddanger_desc']       = 'The error alert color.';
+$string['sidebar-bg-color']       = 'Left sidebar color';
+$string['sidebar-bg-color_desc']  = 'Background color of the left sidebar.';
+$string['font-family-title']      = 'Title font';
+$string['font-family-title_desc'] = 'Title font family';
+$string['font-family-text']       = 'Text font';
+$string['font-family-text_desc']  = 'Text font family';
+
+//slider settings
+$string['slidertitle'] = 'Slider settings';

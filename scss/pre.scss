@@ -1,1 +1,79 @@
 //nastavenie a override premennych
+
+//farby
+$brand-primary: #0276d4 !default;
+$brand-success: #7ab600 !default;
+$brand-warning: #ffbb00 !default;
+$brand-danger:  #fb6542 !default;
+
+$gray-darker:   #292b2c !default;
+$gray-dark:     #373a3c !default;
+$gray:          #55595c !default;
+$gray-light:    #818a91 !default;
+$gray-lighter:  #eceeef !default;
+$gray-lightest: #f7f7f9 !default;
+$brand-inverse: $gray-dark !default;
+
+//farba odkazov
+$anchor-white:           #e2e2e2 !default;
+$anchor-hover-animation: .35s !default;
+
+//farba pozadia
+$backgroundcolor: #f4f4f4 !default;
+
+//pismo
+$font-family-title: "Open Sans", sans-serif !default;
+$font-family-text:  "Open Sans", sans-serif !default;
+$font-size-root: 14px !default;
+
+//navigacia
+$navbar-background:   $gray-darker !default;
+$navbar-anchor:       $anchor-white !default;
+$navbar-height:       60px !default;
+$navbar-border-width: 0 !default;
+$navbar-border-color: darken($gray, 5%) !default;
+
+//breadcrumb
+$breadcrumb-bg:          $gray-lighter !default;
+$breadcrumb-padding-x:   15px !default;
+$breadcrumb-divider:     '\2192' !default;
+$breadcrumb-divider-rtl: '\2190' !default;
+
+//card
+$card-border-radius: .25rem !default;
+$card-border-color:  rgba(238, 238, 238, 1) !default;
+
+//left sidebar
+$sidebar-bg-color: #e2e2e2 !default;
+
+//google fonts
+@font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/Fcx7Wwv8OzT71A3E1XOAjvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
