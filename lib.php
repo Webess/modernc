@@ -40,14 +40,14 @@ function theme_modernc_get_pre_scss($theme) {
 
     $configurable = [
         // kľúč v administrácií => názov premennej
-        'backgroundcolor'   => 'backgroundcolor',
-        'font_family_title' => 'font-family-title',
-        'font_family_text'  => 'font-family-text',
-        'brandprimary'      => 'brand-primary',
-        'brandsuccess'      => 'brand-success',
-        'brandwarning'      => 'brand-warning',
-        'branddanger'       => 'brand-danger',
-        'sidebar_bg_color'  => 'sidebar-bg-color',
+        'backgroundcolor' => 'backgroundcolor',
+        'fontfamilytitle' => 'font-family-title',
+        'fontfamilytext'  => 'font-family-text',
+        'brandprimary'    => 'brand-primary',
+        'brandsuccess'    => 'brand-success',
+        'brandwarning'    => 'brand-warning',
+        'branddanger'     => 'brand-danger',
+        'carouselheight'  => 'carousel-height',
     ];
 
     // spracovanie poľa $configurable na premenné

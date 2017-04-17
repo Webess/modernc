@@ -26,14 +26,15 @@ $string['region-side-pre'] = 'Right';
 
 //jazykové reťazce pre administráciu našej témy
 $string['settingstitle'] = 'ModernC settings';
+
 //general settings
 $string['generaltitle']         = 'General settings';
 $string['backgroundimage']      = 'Background image';
 $string['backgroundimage_desc'] = 'Image on the page background.';
 $string['backgroundcolor']      = 'Background color';
 $string['backgroundcolor_desc'] = 'Background color, if not set the background image.';
-$string['customcss']              = 'CSS rules';
-$string['customcss_desc']         = 'You can insert here your own CSS rules.';
+$string['customcss']            = 'CSS rules';
+$string['customcss_desc']       = 'You can insert here your own CSS rules.';
 
 //color and font settings
 $string['colorfonttitle']         = 'Color & font settings';
@@ -52,5 +53,46 @@ $string['font-family-title_desc'] = 'Title font family';
 $string['font-family-text']       = 'Text font';
 $string['font-family-text_desc']  = 'Text font family';
 
-//slider settings
-$string['slidertitle'] = 'Slider settings';
+//carousel settings
+$string['carouseltitle']        = 'Carousel settings';
+$string['carouselshow']         = 'Show carousel';
+$string['carousel-height']      = 'Carousel height';
+$string['carousel-height_desc'] = '';
+$string['carousel1-title']      = 'Title 1';
+$string['carousel1-title_desc'] = '';
+$string['carousel1-text']       = 'Text 1';
+$string['carousel1-text_desc']  = '';
+$string['slide1-image']         = 'Image 1';
+$string['slide1-image_desc']    = '';
+$string['carousel2-title']      = 'Title 2';
+$string['carousel2-title_desc'] = '';
+$string['carousel2-text']       = 'Text 2';
+$string['carousel2-text_desc']  = '';
+$string['slide2-image']         = 'Image 2';
+$string['slide2-image_desc']    = '';
+$string['carousel3-title']      = 'Title 3';
+$string['carousel3-title_desc'] = '';
+$string['carousel3-text']       = 'Text 3';
+$string['carousel3-text_desc']  = '';
+$string['slide3-image']         = 'Image 3';
+$string['slide3-image_desc']    = '';
+
+//content settings
+$string['paneltitle']        = 'Panel settings';
+$string['panelshow']         = 'Show panels';
+$string['panel1-title']      = 'Title 1';
+$string['panel1-title_desc'] = '';
+$string['panel1-html']       = 'Text 1';
+$string['panel1-html_desc']  = '';
+$string['panel2-title']      = 'Title 2';
+$string['panel2-title_desc'] = '';
+$string['panel2-html']       = 'Text 2';
+$string['panel2-html_desc']  = '';
+$string['panel3-title']      = 'Title 3';
+$string['panel3-title_desc'] = '';
+$string['panel3-html']       = 'Text 3';
+$string['panel3-html_desc']  = '';
+$string['panel4-title']      = 'Title 4';
+$string['panel4-title_desc'] = '';
+$string['panel4-html']       = 'Text 4';
+$string['panel4-html_desc']  = '';

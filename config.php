@@ -26,7 +26,7 @@ $THEME->name = 'modernc';
 // This setting list the style sheets we want to include in our theme. Because we want to use SCSS instead of CSS - we won't
 // list any style sheets. If we did we would list the name of a file in the /style/ folder for our theme without any css file
 // extensions.
-$THEME->sheets = ['custom'];
+$THEME->sheets = ['custom', 'font-awesome'];
 
 // This is a setting that can be used to provide some styling to the content in the TinyMCE text editor. This is no longer the
 // default text editor and "Atto" does not need this setting so we won't provide anything. If we did it would work the same
@@ -65,3 +65,21 @@ $THEME->prescsscallback = 'theme_modernc_get_pre_scss';
 
 //spracovanie vlastneho css z administracie
 $THEME->csspostprocess = 'theme_modernc_process_css';
+
+$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+
+//layouts
+$THEME->layouts = array(
+    'frontpage' => array(
+        'file'          => 'frontpage.php',
+        'regions'       => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options'       => array('nonavbar' => true, 'langmenu' => true),
+    ),
+    'mydashboard' => array(
+        'file'          => 'mydashboard.php',
+        'regions'       => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options'       => array('nonavbar' => true, 'langmenu' => true),
+    ),
+);

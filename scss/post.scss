@@ -24,6 +24,14 @@ a{
     font-family: $font-family-title, sans-serif;
 }
 
+.page-header-headings{
+    line-height: 100px !important;
+}
+
+#single_button58f2361c1579b1{
+    margin-top: 50px !important;
+}
+
 .card-title{
     text-align: center;
 }
@@ -52,6 +60,17 @@ a{
     .nav-link{
         color: $gray-lightest !important;
     }
+    .dropdown-menu{
+        background-color: $navbar-background;
+        color: $gray-lightest;
+        border: 0;
+        .dropdown-item{
+            border-color: $gray-dark;
+            &:hover{
+                background-color: $gray-dark;
+            }
+        }
+    }
 }
 
 .btn-secondary[data-action='toggle-drawer']{
@@ -60,18 +79,6 @@ a{
 
 .usermenu{
     line-height: $navbar-height/1.5;
-}
-
-.dropdown-menu{
-    background-color: $navbar-background;
-    color: $gray-lightest;
-    border: 0;
-    .dropdown-item{
-        border-color: $gray-dark;
-        &:hover{
-            background-color: $gray-dark;
-        }
-    }
 }
 
 //button
@@ -150,4 +157,52 @@ table.flexible td,
 table.forumheaderlist th,
 table.forumheaderlist td{
     border: 1px solid #f4f4f4;
+}
+
+//carousel
+#carousel{
+    margin-top: $carousel-top-margin;
+    h2{
+        font-size: 2.5rem;
+    }
+    .carousel {
+        margin-bottom: 4rem;
+    }
+    .carousel-caption {
+        z-index: 10;
+        bottom: 3rem;
+    }
+    .carousel-item {
+        height: $carousel-height;
+        background-color: #777;
+    }
+    .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: auto;
+    }
+    .carousel-indicators{
+        li {
+            position: relative;
+            width: 35px;
+            height: 3px;
+            margin-right: 3px;
+            margin-left: 3px;
+            background-color: rgba(255,255,255,.5);
+            border: 0;
+            border-radius: 0;
+        }
+        .active {
+            background-color: #fff;
+        }
+    }
+    @media (min-width: 40em) {
+        .carousel-caption p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+    }
 }

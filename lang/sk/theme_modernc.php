@@ -33,8 +33,8 @@ $string['backgroundimage']      = 'Obrázok pozadia';
 $string['backgroundimage_desc'] = 'Obrázok na pozadí.';
 $string['backgroundcolor']      = 'Farba pozadia';
 $string['backgroundcolor_desc'] = 'Farba pozadia, ak nie je nastavený obrázok pozadia.';
-$string['customcss']              = 'CSS pravidlá';
-$string['customcss_desc']         = 'Tu môžete vložiť vlastné CSS pravidlá na zmenu štýlov.';
+$string['customcss']            = 'CSS pravidlá';
+$string['customcss_desc']       = 'Tu môžete vložiť vlastné CSS pravidlá na zmenu štýlov.';
 
 //color and font settings
 $string['colorfonttitle']         = 'Nastavenia farieb a písma';
@@ -51,7 +51,48 @@ $string['brandwarning_desc']      = 'Varovania na stránke budú zvýraznené to
 $string['branddanger']            = 'Farba chýb';
 $string['branddanger_desc']       = 'Chyby na stránke budú zvýraznené touto farbou.';
 $string['sidebar-bg-color']       = 'Farba ľavého panelu';
-$string['sidebar-bg-color_desc']  = 'Background color of the left sidebar.';
+$string['sidebar-bg-color_desc']  = 'Farba pozadia ľavého panelu.';
 
-//slider settings
-$string['slidertitle'] = 'Slider settings';
+//carousel settings
+$string['carouseltitle']        = 'Nastavenia carouselu';
+$string['carouselshow']         = 'Zobraziť carousel';
+$string['carousel-height']      = 'Výška carouselu';
+$string['carousel-height_desc'] = '';
+$string['carousel1-title']      = 'Nadpis 1';
+$string['carousel1-title_desc'] = '';
+$string['carousel1-text']       = 'Text 1';
+$string['carousel1-text_desc']  = '';
+$string['slide1-image']         = 'Obrázok 1';
+$string['slide1-image_desc']    = '';
+$string['carousel2-title']      = 'Nadpis 2';
+$string['carousel2-title_desc'] = '';
+$string['carousel2-text']       = 'Text 2';
+$string['carousel2-text_desc']  = '';
+$string['slide2-image']         = 'Obrázok 2';
+$string['slide2-image_desc']    = '';
+$string['carousel3-title']      = 'Nadpis 3';
+$string['carousel3-title_desc'] = '';
+$string['carousel3-text']       = 'Text 3';
+$string['carousel3-text_desc']  = '';
+$string['slide3-image']         = 'Obrázok 3';
+$string['slide3-image_desc']    = '';
+
+//content settings
+$string['paneltitle']        = 'Nastavenia panelov';
+$string['panelshow']         = 'Zobraziť panely';
+$string['panel1-title']      = 'Názov panelu 1';
+$string['panel1-title_desc'] = '';
+$string['panel1-html']       = 'Obsah panelu 1';
+$string['panel1-html_desc']  = '';
+$string['panel2-title']      = 'Názov panelu 2';
+$string['panel2-title_desc'] = '';
+$string['panel2-html']       = 'Obsah panelu 2';
+$string['panel2-html_desc']  = '';
+$string['panel3-title']      = 'Názov panelu 3';
+$string['panel3-title_desc'] = '';
+$string['panel3-html']       = 'Obsah panelu 3';
+$string['panel3-html_desc']  = '';
+$string['panel4-title']      = 'Názov panelu 4';
+$string['panel4-title_desc'] = '';
+$string['panel4-html']       = 'Obsah panelu 4';
+$string['panel4-html_desc']  = '';

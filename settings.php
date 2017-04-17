@@ -59,7 +59,7 @@ if ($ADMIN->fulltree) {
     $page = new admin_settingpage('theme_modernc_colorfont', get_string('colorfonttitle', 'theme_modernc'));
 
     //nastavenia pisma nadpisov
-    $name = 'theme_modernc/font_family_title';
+    $name = 'theme_modernc/fontfamilytitle';
     $title = get_string('font-family-title','theme_modernc');
     $description = get_string('font-family-title_desc', 'theme_modernc');
     $choices = [
@@ -74,7 +74,7 @@ if ($ADMIN->fulltree) {
     $page->add($setting);
 
     //nastavenia pisma textu
-    $name = 'theme_modernc/font_family_text';
+    $name = 'theme_modernc/fontfamilytext';
     $title = get_string('font-family-text','theme_modernc');
     $description = get_string('font-family-text_desc', 'theme_modernc');
     $choices = [
@@ -132,13 +132,182 @@ if ($ADMIN->fulltree) {
     $settings->add($page);
 
 
-    //vytvoríme kartu slider settings
-    $page = new admin_settingpage('theme_modernc_slider', get_string('slidertitle', 'theme_modernc'));
+    //vytvoríme kartu carousel settings
+    $page = new admin_settingpage('theme_modernc_carousel', get_string('carouseltitle', 'theme_modernc'));
 
-    //pridanie nastavenia do karty
-    //$page->add($setting);
+    //zobrazit
+    $name = 'theme_modernc/carouselshow';
+    $title = get_string('carouselshow', 'theme_modernc');
+    $setting = new admin_setting_configcheckbox($name, $title, '', 0);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //vyska carouselu
+    $name = 'theme_modernc/carouselheight';
+    $title = get_string('carousel-height','theme_modernc');
+    $description = get_string('carousel-height_desc', 'theme_modernc');
+    $choices = [
+        '300px' => '300px',
+        '400px' => '400px',
+        '500px' => '500px',
+        '600px' => '600px',
+    ];
+    $default = '400px';
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //nadpis 1
+    $name = 'theme_modernc/carousel1title';
+    $title = get_string('carousel1-title', 'theme_modernc');
+    $description = get_string('carousel1-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //text 1
+    $name = 'theme_modernc/carousel1text';
+    $title = get_string('carousel1-text', 'theme_modernc');
+    $description = get_string('carousel1-text_desc', 'theme_modernc');
+    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //obrázok 1
+    $name = 'theme_modernc/carousel1image';
+    $title = get_string('slide1-image', 'theme_modernc');
+    $description = get_string('slide1-image_desc', 'theme_modernc');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'carousel1image');
+    $setting->set_updatedcallback('theme_modernc_update_settings_images');
+    $page->add($setting);
+
+    //nadpis 2
+    $name = 'theme_modernc/carousel2title';
+    $title = get_string('carousel2-title', 'theme_modernc');
+    $description = get_string('carousel2-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //text 2
+    $name = 'theme_modernc/carousel2text';
+    $title = get_string('carousel2-text', 'theme_modernc');
+    $description = get_string('carousel2-text_desc', 'theme_modernc');
+    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //obrázok 2
+    $name = 'theme_modernc/carousel2image';
+    $title = get_string('slide2-image', 'theme_modernc');
+    $description = get_string('slide2-image_desc', 'theme_modernc');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'carousel2image');
+    $setting->set_updatedcallback('theme_modernc_update_settings_images');
+    $page->add($setting);
+
+    //nadpis 3
+    $name = 'theme_modernc/carousel3title';
+    $title = get_string('carousel3-title', 'theme_modernc');
+    $description = get_string('carousel3-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //text 3
+    $name = 'theme_modernc/carousel3text';
+    $title = get_string('carousel3-text', 'theme_modernc');
+    $description = get_string('carousel3-text_desc', 'theme_modernc');
+    $setting = new admin_setting_configtextarea($name, $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //obrázok 3
+    $name = 'theme_modernc/carousel3image';
+    $title = get_string('slide3-image', 'theme_modernc');
+    $description = get_string('slide3-image_desc', 'theme_modernc');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'carousel3image');
+    $setting->set_updatedcallback('theme_modernc_update_settings_images');
+    $page->add($setting);
+
 
     //kartu pridáme do nastavení
     $settings->add($page);
 
+    //vytvoríme kartu panel settings
+    $page = new admin_settingpage('theme_modernc_panel', get_string('paneltitle', 'theme_modernc'));
+
+    //zobrazit
+    $name = 'theme_modernc/panelshow';
+    $title = get_string('panelshow', 'theme_modernc');
+    $setting = new admin_setting_configcheckbox($name, $title, '', 0);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //nadpis1
+    $name = 'theme_modernc/panel1title';
+    $title = get_string('panel1-title', 'theme_modernc');
+    $description = get_string('panel1-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //html 1
+    $name = 'theme_modernc/panel1html';
+    $title = get_string('panel1-html', 'theme_modernc');
+    $description = get_string('panel1-html_desc', 'theme_modernc');
+    $setting = new admin_setting_confightmleditor($name, $title, $description, '', PARAM_RAW_TRIMMED);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //nadpis2
+    $name = 'theme_modernc/panel2title';
+    $title = get_string('panel2-title', 'theme_modernc');
+    $description = get_string('panel2-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //html 2
+    $name = 'theme_modernc/panel2html';
+    $title = get_string('panel2-html', 'theme_modernc');
+    $description = get_string('panel2-html_desc', 'theme_modernc');
+    $setting = new admin_setting_confightmleditor($name, $title, $description, '', PARAM_RAW_TRIMMED);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //nadpis3
+    $name = 'theme_modernc/panel3title';
+    $title = get_string('panel3-title', 'theme_modernc');
+    $description = get_string('panel3-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //html 3
+    $name = 'theme_modernc/panel3html';
+    $title = get_string('panel3-html', 'theme_modernc');
+    $description = get_string('panel3-html_desc', 'theme_modernc');
+    $setting = new admin_setting_confightmleditor($name, $title, $description, '', PARAM_RAW_TRIMMED);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //nadpis4
+    $name = 'theme_modernc/panel4title';
+    $title = get_string('panel4-title', 'theme_modernc');
+    $description = get_string('panel4-title_desc', 'theme_modernc');
+    $setting = new admin_setting_configtext($name , $title, $description, '');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+    //html 4
+    $name = 'theme_modernc/panel4html';
+    $title = get_string('panel4-html', 'theme_modernc');
+    $description = get_string('panel4-html_desc', 'theme_modernc');
+    $setting = new admin_setting_confightmleditor($name, $title, $description, '', PARAM_RAW_TRIMMED);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $page->add($setting);
+
+
+    //kartu pridáme do nastavení
+    $settings->add($page);
 }

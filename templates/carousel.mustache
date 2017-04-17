@@ -1,0 +1,36 @@
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1" class=""></li>
+        <li data-target="#carousel" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            {{# pix }}carousel1image, theme_modernc, slide1{{/ pix }}
+            <div class="container">
+                <div class="carousel-caption d-none d-md-block text-left">
+                    {{#carousel1title}}{{{carousel1title}}}{{/carousel1title}}
+                    {{#carousel1text}}{{{carousel1text}}}{{/carousel1text}}
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            {{# pix }}carousel2image, theme_modernc, slide2{{/ pix }}
+            <div class="container">
+                <div class="carousel-caption d-none d-md-block">
+                    {{#carousel2title}}{{{carousel2title}}}{{/carousel2title}}
+                    {{#carousel2text}}{{{carousel2text}}}{{/carousel2text}}
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            {{# pix }}carousel3image, theme_modernc, slide3{{/ pix }}
+            <div class="container">
+                <div class="carousel-caption d-none d-md-block text-right">
+                    {{#carousel3title}}{{{carousel3title}}}{{/carousel3title}}
+                    {{#carousel3text}}{{{carousel3text}}}{{/carousel3text}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
